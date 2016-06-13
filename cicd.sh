@@ -5,7 +5,7 @@ ACTION="$1"
 function build_slaves() {
   SLAVES="jnlp-slave-docker jnlp-slave-kube jnlp-slave-packer jnlp-slave-php"
   for SLAVE in $SLAVES; do
-    docker build -t ${SLAVE}:latest ${SLAVE}/
+    docker build -t ${SLAVE}:alpine ${SLAVE}/
   done
 }
 

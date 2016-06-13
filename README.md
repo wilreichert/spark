@@ -1,4 +1,4 @@
-Science experiment to see how quickly you can get a fully configured CICD toolchain running in containers.
+Science experiment to stand up a fully configured CICD toolchain running in containers.
 
 # Design
 
@@ -22,8 +22,9 @@ Does a check to make sure docker is working, then pulls docker-compose (mac / li
   * build jenkins pre-loaded with plugins
 
 # TODO:
+* optimize bloated slaves
 * Add something better than names volumes for docker storage
 * auto-configuration
 * terraform?
 * kubernetes?
-* evaulate different infra
+* evaluate different infra
